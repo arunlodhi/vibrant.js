@@ -6,6 +6,7 @@
     for (i = 0, len = examples.length; i < len; i++) {
       example = examples[i];
       img = example.querySelector('img');
+      img.crossOrigin = "Anonymous";
       img.setAttribute('src', img.getAttribute('data-src'));
       results.push(img.addEventListener('load', function(e) {
         var color, colorHolder, colorName, colors, j, len1, panel, profile, profileName, profiles, results1, vibrant;
