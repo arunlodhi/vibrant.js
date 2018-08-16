@@ -15,7 +15,7 @@
         while (!panel.classList.contains('panel')) {
           panel = panel.parentElement;
         }
-        panel.style.backgroundColor = vibrant.VibrantSwatch.getHex();
+        panel.style.backgroundColor = vibrant.DarkVibrantSwatch.getHex();
         panel.style.color = vibrant.VibrantSwatch.getTitleTextColor();
         colors = document.createElement('div');
         colors.classList.add('colors');
