@@ -100,7 +100,7 @@
         <pre class="prettyprint">
 var img = document.createElement('img');
 img.setAttribute('src', 'examples/octocat.png')
-
+img.crossOrigin = "Anonymous";
 img.addEventListener('load', function() {
     var vibrant = new Vibrant(img);
     var swatches = vibrant.swatches()
